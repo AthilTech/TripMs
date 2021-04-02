@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Repository\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
     <PackageReference Include="MediatR" Version="9.0.0" />
@@ -31,7 +27,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TripMs.Domain\TripMs.Domain.csproj" />
-    <ProjectReference Include="..\TripMs.Infra.Ioc\TripMs.Infra.Ioc.csproj" />
   </ItemGroup>
 
 </Project>

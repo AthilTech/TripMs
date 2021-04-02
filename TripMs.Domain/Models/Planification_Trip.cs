@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TripMs.Domain.Models
 {
-    class Planification_Trip
+    public class Planification_Trip
     {
         public Guid Planification_DeplacementId { get; set; }
         public DateTime Date { get; set; }
