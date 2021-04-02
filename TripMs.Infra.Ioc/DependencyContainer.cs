@@ -26,7 +26,6 @@ namespace TripMs.Infra.Ioc
             services.AddTransient<IRequestHandler<GetListQuery<Trip>, IEnumerable<Trip>>, GetListHandler<Trip>>();
             services.AddTransient<IRequestHandler<GetQuery<Trip>, Trip>, GetHandler<Trip>>();
             
-
             #endregion
 
 
