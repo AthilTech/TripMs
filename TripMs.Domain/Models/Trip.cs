@@ -9,7 +9,9 @@ namespace TripMs.Domain.Models
     {
         public Guid TripId { get; set; }
         public DateTime Date { get; set; }
-        public string Type { get; set; }
         public string Location { get; set; }
+        public string Description  { get; set; } 
+        public bool plannified { get; set; } 
+       
     }
 }
