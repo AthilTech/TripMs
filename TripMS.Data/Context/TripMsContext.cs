@@ -22,7 +22,7 @@ namespace TripMs.Data.Context
             #region Settings: set Primary keys
 
             modelBuilder.Entity<Trip>()
-              .HasKey(r => r.TripId);
+              .HasKey(t => t.TripId);
 
 
             #endregion

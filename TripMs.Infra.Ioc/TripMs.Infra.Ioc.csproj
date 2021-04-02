@@ -25,4 +25,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TripMS.Data\TripMs.Data.csproj" />
+    <ProjectReference Include="..\TripMs.Domain\TripMs.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
