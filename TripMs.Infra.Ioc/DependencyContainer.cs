@@ -18,6 +18,7 @@ namespace TripMs.Infra.Ioc
         public static void RegisterServices(IServiceCollection services)
        {
             services.AddTransient<TripMsContext>();
+
             #region Trip
 
            // services.AddTransient<IRepository<Trip>, Repository<Trip>>();

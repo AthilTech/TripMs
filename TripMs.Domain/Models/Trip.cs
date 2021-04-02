@@ -11,7 +11,7 @@ namespace TripMs.Domain.Models
         public DateTime Date { get; set; }
         public string Location { get; set; }
         public string Description  { get; set; } 
-        public bool plannified { get; set; } 
+        public bool Plannified { get; set; } 
        
     }
 }
