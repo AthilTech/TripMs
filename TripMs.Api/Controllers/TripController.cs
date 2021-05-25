@@ -39,7 +39,7 @@ namespace TripMs.Api.Controllers
 
 
         [HttpGet("{id}")]
-        public TripDTO Get(Guid id)
+        public TripDTO Ge(Guid id)
         {
             Trip Trip = _mediator.Send(new GetQuery<Trip>(condition: c => c.TripId == id)).Result;
             return _mapper.Map<TripDTO>(Trip);
@@ -49,7 +49,8 @@ namespace TripMs.Api.Controllers
         [HttpPost]
         public async Task<string> Post(Trip Trip)
         {
-            return await _mediator.Send(new PostCommand<Trip>(Trip));
+             await _mediator.Send(new PostCommand<Trip>(Trip));
+            return Trip.TripId.ToString();
         }
 
 

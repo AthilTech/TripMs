@@ -28,7 +28,7 @@ namespace TripMs.Api
 
             services.AddDbContext<TripMsContext>(options =>
             {
-                options.UseSqlServer(Configuration.GetConnectionString("DevConnection"));
+                options.UseSqlServer("Data Source=DESKTOP-985HOB1;Initial Catalog=Pgh.Trip;Integrated Security=True");
             });
 
 
@@ -82,7 +82,7 @@ namespace TripMs.Api
                 app.UseSwagger();
                 app.UseSwaggerUI(c =>
                 {
-                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Energie Monitoring V1");
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Trip Microservice V1");
                 });
 
             }
